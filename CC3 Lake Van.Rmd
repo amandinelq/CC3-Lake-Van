@@ -484,6 +484,7 @@ plot_ordination(ps.prop, ord.nmds.bray, color="sample_type", title="Bray PCoA", 
 #en ordination faire une pcoa et une CCA
 
 
+
 ```{r, include=FALSE}
 ps.prop2 <- transform_sample_counts(ps, function(otu) otu/sum(otu))
 ord.nmds.bray2 <- ordinate(ps.prop, method="PCoA", distance="jaccard")
