@@ -334,5 +334,5 @@ plot_bar(ps.top20, x="localisation", fill="Class") + facet_wrap(~Mois, scales="f
 
 .
 .
-
+.
 
