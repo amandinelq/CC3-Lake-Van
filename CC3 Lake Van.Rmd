@@ -5,7 +5,7 @@ date: "2022-12-20"
 ---
 
 #charger toutes les librairies
-```{r}
+```{r library, include=FALSE}
 library(phyloseq)
 library(dada2)
 library(DECIPHER)
@@ -36,11 +36,11 @@ library(phyloseqGraphTest)
 library(Biostrings)
 ```
 
-```{bash, include=TRUE, eval}
+```{bash, eval=FALSE}
 mkdir data
 ```
 
-```{bash, include=TRUE, eval}
+```{bash, eval=FALSE}
 wget -P data -i fasta
 ```
 
@@ -156,7 +156,7 @@ head(track)
 
 
 #annotation taxonomique
-```{bash, include=TRUE, eval=FALSE}
+```{bash, include=FALSE, eval=FALSE}
 #1-télécharger fichier
 wget https://zenodo.org/record/4587955/files/silva_nr99_v138.1_train_set.fa.gz?download=1
 ```
@@ -172,7 +172,7 @@ rownames(taxa.print) <- NULL
 head(taxa.print)
 ```
 
-```{bash, include=TRUE, eval=TRUE}
+```{bash, include=FALSE, eval=TRUE}
 wget http://www2.decipher.codes/Classification/TrainingSets/SILVA_SSU_r138_2019.RData
 ```
 
